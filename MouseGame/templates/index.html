@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="game-area">
+        <div id="blue-player" class="player"></div>
+        <div id="red-player" class="player"></div>
+        <div id="score-display">
+            <span id="blue-score">0</span> - <span id="red-score">0</span>
+        </div>
+        <div id="overlay" class="hidden">
+            <h1></h1>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
